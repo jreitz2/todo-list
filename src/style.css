@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(74, 10, 75);
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.logo2 {
+    width: 150px;
+    cursor:default;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.dark-circle {
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(225, 175, 226);
+}
+
+.dark-circle img {
+    transform: translate3d(5px, 5px, 0px);
+}
+
+aside {
+    background-color: rgb(101, 44, 102);
+    padding: 1%;
+    padding-top: 3rem;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+.project, .todo, .add-todo, .search, .nav, .search2 {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.side-bar, .menu, .projects {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+main {
+    background-color: rgb(225, 175, 226);
+    display: flex;
+    height: 75vh;
+}
+
+.search {
+    justify-content: space-between;
+}
+
+input {
+    font-size: 1.5rem;
+    border-radius: 8px;
+}
+
+.container {
+    flex:2;
+    padding: 1%;
+    padding-left: 3%;
+}
+.add-todo {
+    display: none;
+}
+
+.displayShow {
+    display: block;
+    text-indent: 8%;
+    font-size: .8em;
+    overflow-wrap: anywhere;
+}
+textarea {
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+.todo, .add-todo {
+    justify-content: center;
+}
+
+.todo {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1%;
+}
+
+.dark-mode .main{
+    background-color: rgb(104, 57, 105);
+}
+
+.dark-mode .main input[type="text"] {
+    background-color: grey;
+}
+
+.dark-mode textarea {
+    background-color: grey;
+}
+
+.dark-mode .side-bar {
+    background-color:rgb(71, 29, 71);
+}
+.dark-mode {
+    background-color:rgb(50, 6, 51);
+    color:grey;
+}
+

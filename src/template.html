@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+</head>
+<body class="body">
+    <header>
+        <div class="logo">
+            <img src="./logo.png" alt="logo" class="logo2">
+            <h1>Todo-List</h1>
+        </div>
+        <div class="dark-circle"><img src="./dark.png" alt="dark mode"></div>
+    </header>
+    <main class="main">
+        <aside class="side-bar">
+            <section class="menu">
+                <div class="nav">
+                    <div><img src="./inbox.png" alt="inbox" id="inbox-icon"></div>
+                    <div>Inbox</div>
+                </div>
+                <div class="nav">
+                    <div><img src="./calendar.png" alt="calendar"></div>
+                    <div>Calendar</div>
+                </div>
+            </section>
+            <h3>Projects</h3>
+            <section>
+                <div id="projects">
+                <div class="project">
+                    <!-- <div><img src="./project.png" alt="project"></div>
+                    <div>Sample Project</div>
+                    <div class="delete"><img src="./delete.png" alt="trashcan"></div> -->
+                </div>
+                </div>
+                <div class="nav" id="add-project">
+                    <div class="nav" id="add-project-btn"><img src="./new-project.png" alt="add project"></div>
+                    <div>Add Project</div>
+                </div>
+            </section>
+        </aside>
+        <div class="container">
+            <section class="search">
+                <h2 id="project-header">Inbox</h2>
+                <!-- <div class="search2">
+                    <div><img src="./search.png" alt="search" class="search"></div>
+                    <form class="search-bar">
+                        <input type="text" name="search" placeholder="Search todos">
+                    </form>
+                </div> -->
+            </section>
+            <section class="content">
+                <div id="todo-container">
+                    <div class="todo">
+                        <div class="todo-title">Sample todo</div>
+                        <div class="todo-date">today's date</div>
+                        <div class="delete"><img src="./delete.png" alt="trashcan"></div>
+                    </div>
+                </div>
+                <div class="add-todo">
+                    <div class="plus"><img src="./plus.png" alt="plus"></div>
+                    <form id="addTaskForm">
+                        <input type="text" name="addTodo" id="add-todo" placeholder="Add a task">
+                        <br>
+                        <textarea name="addDescription" id="add-description" rows="3" cols= "35" placeholder="Add a description"></textarea>
+                        <br>
+                        <input type="date" name="addDate" id="add-date">
+                        <br>
+                        <input type="submit" value="Add task">
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div><img src="./github.png" alt="github logo"></div>
+        <div>2023 Joshua Reitz</div>
+    </footer>
+</body>
+</html>
